@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ html {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+main {
+    margin: auto;
+    width: 60vw;
+}
+ul {
+    list-style: none;
+}
+details {
+    margin: 2px;
+}
+.sectionsummary{
+    background-color:rgb(255, 219, 153);
+    list-style-type: none;
+}
+details > .sectionsummary{
+    list-style-type: '+';
+}
+details[open] > .sectionsummary{
+    background-color: rgb(177, 164, 253);
+    list-style-type: '-';
+}
+details > .subsectionsummary{
+    list-style-type: '➡️';
+}
+details[open] > .subsectionsummary{
+    list-style-type: '⬇️';
+}
+
+.subsectionsummary{
+    list-style: none;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.section{
+    font-weight: 700;
+}
+
+.keypoint, .summary{
+    font-weight: 300;
+}
+
+li.summary{
+    margin: 2px;
+    font-style: italic;
+}
+
+</style>
+<title>ISTQB TAE Summary</title>
+</head>
+<body>
+<main>
+    <span>ISTQB Test Automation Engineer Syllabus sections and their key points</span>
+    <ul id="main-list" class="main-list">
+        <li id="objectives" class="section">
+            <details>
+                <summary class="sectionsummary">Introduction and Objectives for Test Automation</summary>
+                
+<ul>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">Purpose of Test Automation</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary>Test automation is used for:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Using purpose built software tools to control and set up test preconditions</li><li class="summary">Executing tests</li><li class="summary">Comparing actual outcomes to predicted outcomes</li>
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">Success Factors in Test Automation</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary>Test Automation Architecture (TAA)</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Closely aligned with the architecture of a software product.</li><li class="summary">Designed for maintainability, performance and learnability.</li>
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<ul>
+
+            </details>
+        </li>
+        <li id="preparation" class="section">
+            <details>
+                <summary class="sectionsummary">Preparing for Test Automation</summary>
+            </details>
+        </li>
+        <li id="gtaa" class="section">
+            <details>
+                <summary class="sectionsummary">The Generic Test Automation Architecture</summary>
+            </details>
+        </li>
+        <li id="demployment" class="section">
+            <details>
+                <summary class="sectionsummary">Deployment Risks and Contingencies</summary>
+            </details>
+        </li>
+        <li id="reporting" class="section">
+            <details>
+                <summary class="sectionsummary">Test Automation Reporting and Metrics</summary>
+            </details>
+        </li>
+        <li id="mantoauto" class="section">
+            <details>
+                <summary class="sectionsummary">Transitioning Manual Testing to an Automated Environment</summary>
+            </details>
+        </li>
+        <li id="verification" class="section">
+            <details>
+                <summary class="sectionsummary">Verifying the TAS</summary>
+            </details>
+        </li>
+        <li id="improvement" class="section">
+            <details>
+                <summary class="sectionsummary">Continuous Improvement</summary>
+            </details>
+        </li>
+    </ul>
+    
+</main>
+</body>
+
+</html>
