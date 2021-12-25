@@ -1,13 +1,16 @@
 html {
     font-family:'Courier New', Courier, monospace;
-    font-size: 24px;
+    font-size: 2.25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-main {
+body{
     margin: auto;
+    margin-top: 5vh;
+}
+main {
     width: 60vw;
 }
 ul {
@@ -24,17 +27,19 @@ details > .sectionsummary{
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
-    background-color: rgb(177, 164, 253);
+    background-color: rgb(167, 162, 197);
     list-style-type: '-';
 }
 details > .subsectionsummary{
     list-style-type: '➡️';
 }
 details[open] > .subsectionsummary{
+    background-color:rgb(170, 255, 153);
     list-style-type: '⬇️';
 }
 
 .subsectionsummary{
+    font-size: 2vh;
     list-style: none;
     text-decoration: underline;
     font-weight: 300;
@@ -45,6 +50,7 @@ details[open] > .subsectionsummary{
 }
 
 .keypoint, .summary{
+    font-size: 2vh;
     font-weight: 300;
 }
 
