@@ -25,7 +25,8 @@ details {
     list-style-type: none;
 }
 details > .sectionsummary{
-    border-style:solid;
+    border: 1px solid;
+    border-radius: 3px;
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
