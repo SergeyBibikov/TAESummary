@@ -16,8 +16,8 @@ const head = `
 </head>`;
 const body = `
 <body>
+<div class="title">ISTQB Test Automation Engineer Syllabus sections and their key points</div>
 <main>
-    <span>ISTQB Test Automation Engineer Syllabus sections and their key points</span>
     <ul id="main-list" class="main-list">
         <li id="objectives" class="section">
             <details>

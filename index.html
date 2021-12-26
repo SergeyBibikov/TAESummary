@@ -6,20 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
- html {
+ 
+html {
+    height: 100vh;
     font-family: sans-serif;
     font-size: 3vh;
+    color: rgb(87, 86, 86);
+    background-color: whitesmoke;
+}
+
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    color: grey;
-}
-body{
     margin: auto;
     margin-top: 5vh;
 }
+.title{
+    width: 60vw;
+    margin-left: 8vh;
+}
 main {
+    display: flex;
     width: 80vw;
 }
 ul {
@@ -74,8 +83,8 @@ li.summary{
 <title>ISTQB TAE Summary</title>
 </head>
 <body>
+<div class="title">ISTQB Test Automation Engineer Syllabus sections and their key points</div>
 <main>
-    <span>ISTQB Test Automation Engineer Syllabus sections and their key points</span>
     <ul id="main-list" class="main-list">
         <li id="objectives" class="section">
             <details>

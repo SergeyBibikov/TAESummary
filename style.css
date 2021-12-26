@@ -1,17 +1,26 @@
+
 html {
+    height: 100vh;
     font-family: sans-serif;
     font-size: 3vh;
+    color: rgb(87, 86, 86);
+    background-color: whitesmoke;
+}
+
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    color: grey;
-}
-body{
     margin: auto;
     margin-top: 5vh;
 }
+.title{
+    width: 60vw;
+    margin-left: 8vh;
+}
 main {
+    display: flex;
     width: 80vw;
 }
 ul {
