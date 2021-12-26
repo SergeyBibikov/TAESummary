@@ -65,7 +65,7 @@ details[open] > .subsectionsummary{
 
 .pointslist {
     font-weight: bold;
-    color: black;
+    color: rgb(26, 26, 26);
 }
 details[open] > .keypointsummary{
     color: rgb(86, 86, 247);
@@ -324,6 +324,151 @@ li.summary{
         <li id="gtaa" class="section">
             <details>
                 <summary class="sectionsummary">The Generic Test Automation Architecture</summary>
+                
+<ul>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">Introduction to gTAA</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary class="keypointsummary">gTAA defines :</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Concept space</li><li class="summary">Layers</li><li class="summary">Components</li><li class="summary">Interfaces</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">gTAA is vendor-neutral and allows for a structured and modular approach to building a test automation solution by:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Defining the concept space, layers, services, and interfaces of a TAS 
+                    to enable the realization of TASs 
+                    by in-house as well as by externally developed components</li><li class="summary">Supporting simplified components for the effective and efficient development of test automation</li><li class="summary">Re-using test automation components wherever necessary</li><li class="summary">Easing the maintenance and evolution of TASs</li><li class="summary">Defining the essential features for a user of a TAS</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">TAS consists of:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Test environment (and its artifacts)</li><li class="summary">Test suites (a set of test cases including test data).</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">TAF provides:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Support for the realization of the test environment</li><li class="summary">Useful tools</li><li class="summary">Test harnesses</li><li class="summary">Supporting libraries</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">TAA principles to follow:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Single responsibility (component has only one reason to change)</li><li class="summary">Extension (component is closed for modification, open for extension)</li><li class="summary">Replacement (two components with the same functionality must be easily changeable)</li><li class="summary">Component segregation (one simple specific component is better than a large general one)</li><li class="summary">Dependency inversion (higher level components should not depend on the concrete implementation;
+                    the TAF component should not depend on the test details)</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">gTAA horizontal layers(can be absent from the specific TAA)</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Test generation</li><li class="summary">Test definition</li><li class="summary">Test execution</li><li class="summary">Test adaptation</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">gTAA also has interfaces for:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Configuration management</li><li class="summary">Project management</li><li class="summary">Test management</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Test Generation Layer</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Supports tools for:<br> 
+                    * manual test case design<br>
+                    * developing, capturing, or deriving test data<br>
+                    * automatically generating test cases from models that define the SUT and/or its environment<br></li><li class="summary">Components in this layer are used to:<br>
+                * edit and navigate test suite structures <br>
+                * relate test cases to test objectives or SUT requirements <br>
+                * document the test design <br></li><li class="summary">Capabilities for automated test generation include:<br>
+                * ability to model the SUT, its environment, and/or the test system<br>
+                * ability to define test directives and to configure/parameterize test generation algorithms<br>
+                * ability to trace the generated tests back to the model (elements)</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Test Definition Layer</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Supports tools for:<br>
+                * specifying test cases (at a high and/or low level)<br>
+                * defining test data for low-level test cases<br>
+                * specifying test procedures for a test case or a set of test cases<br>
+                * defining test scripts for the execution of the test cases<br>
+                * providing access to test libraries as needed (for example in keyword-driven approaches<br></li><li class="summary">Components in this layer are used to:<br>
+                * partition/constrain, parameterize or instantiate test data<br>
+                * specify test sequences or fully-fledged test behaviors (including control statements and
+                expressions), to parameterize and/or to group them<br>
+                * document the test data, test cases and/or test procedures
+                </li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li>
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">TAA Design</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">TAS Development</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<ul>
+
             </details>
         </li>
         <li id="demployment" class="section">

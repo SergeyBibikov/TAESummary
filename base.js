@@ -1,5 +1,6 @@
 const objectivesSubsections = require('./sections/objectives/main').subsections;
 const preparationSubsections = require('./sections/preparation/main').subsections;
+const gtaaSubsections = require('./sections/gtaa/main').subsections;
 function loadStyles(){
     const fs = require('fs');
     return fs.readFileSync('style.css', {encoding:"utf-8"});
@@ -34,6 +35,7 @@ const body = `
         <li id="gtaa" class="section">
             <details>
                 <summary class="sectionsummary">The Generic Test Automation Architecture</summary>
+                ${gtaaSubsections}
             </details>
         </li>
         <li id="demployment" class="section">

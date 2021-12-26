@@ -57,7 +57,7 @@ details[open] > .subsectionsummary{
 
 .pointslist {
     font-weight: bold;
-    color: black;
+    color: rgb(26, 26, 26);
 }
 details[open] > .keypointsummary{
     color: rgb(86, 86, 247);
