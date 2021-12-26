@@ -38,14 +38,16 @@ details > .sectionsummary{
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
-    background-color: rgb(243, 248, 176);
+    /* background-color: rgb(243, 248, 176); */
+    color: rgb(86, 86, 247);
     list-style-type: '-';
 }
 details > .subsectionsummary{
     list-style-type: '➡️';
 }
 details[open] > .subsectionsummary{
-    background-color:rgb(179, 238, 238);
+    /* background-color:rgb(179, 238, 238); */
+    color: rgb(86, 86, 247);
     list-style-type: '⬇️';
 }
 
@@ -56,6 +58,9 @@ details[open] > .subsectionsummary{
 
 .pointslist {
     font-weight: bold;
+}
+details[open] > .keypointsummary{
+    color: rgb(247, 184, 49);
 }
 .keypoint{
     font-size: 2.25vh;
@@ -83,35 +88,35 @@ li.summary{
         <summary class="subsectionsummary">Purpose of Test Automation</summary>
         <ul>
         <li><details class="keypoint">
-        <summary>Test automation is used for:</summary>
+        <summary class="keypointsummary">Test automation is used for:</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">Using purpose built software tools to control and set up test preconditions</li><li class="summary">Executing tests</li><li class="summary">Comparing actual outcomes to predicted outcomes</li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary>Testware consists of:</summary>
+        <summary class="keypointsummary">Testware consists of:</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">Software</li><li class="summary">Documentation</li><li class="summary">Test cases</li><li class="summary">Test environment</li><li class="summary">Test data</li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary>Interaction with a SUT via:</summary>
+        <summary class="keypointsummary">Interaction with a SUT via:</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">API (low-level)</li><li class="summary">GUI (high-level)</li><li class="summary">Service or protocol</li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary>Test automation objectives:</summary>
+        <summary class="keypointsummary">Test automation objectives:</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">Improving test efficiency</li><li class="summary">Providing wider function coverage</li><li class="summary">Reducing total test cost</li><li class="summary">Performing tests that manual testers cannot</li><li class="summary">Shortening the test execution period</li><li class="summary">Increasing the test frequency/reducing the time required for test cycles</li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary>Advantages of test automation:</summary>
+        <summary class="keypointsummary">Advantages of test automation:</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">More tests can be run per build</li><li class="summary">The possibility to create tests 
@@ -119,7 +124,7 @@ li.summary{
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary>Disadvantages of test automation:</summary>
+        <summary class="keypointsummary">Disadvantages of test automation:</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">Additional costs are involved</li><li class="summary">Initial investment to setup TAS</li><li class="summary">Requires additional technologies</li><li class="summary">Team needs to have development and automation skills</li><li class="summary">On-going TAS maintenance requirement</li><li class="summary">Can distract from testing objectives, 
@@ -128,10 +133,10 @@ li.summary{
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary></summary>
+        <summary class="keypointsummary">Limitations of test automation:</summary>
         <ol>
         <div class="pointslist">
-        
+        <li class="summary">Not all manual tests can be automated</li><li class="summary">The automation can only check machine-interpretable results</li><li class="summary">The automation can only check actual results that can be verified by an automated test oracle</li><li class="summary">Not a replacement for exploratory testing</li>
         </div>
         <ol>
         </details></li>
@@ -142,10 +147,54 @@ li.summary{
         <summary class="subsectionsummary">Success Factors in Test Automation</summary>
         <ul>
         <li><details class="keypoint">
-        <summary>Test Automation Architecture (TAA)</summary>
+        <summary class="keypointsummary">Test Automation Architecture (TAA)</summary>
         <ol>
         <div class="pointslist">
         <li class="summary">Closely aligned with the architecture of a software product.</li><li class="summary">Designed for maintainability, performance and learnability.</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">SUT testability</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Should be considered as early as possible during SUT design</li><li class="summary">Requires effort to increase, e.g, by adding new interfaces</li><li class="summary">The testable parts of the SUT should be targeted first by automation</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Test automation strategy</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Should be practical and consistent</li><li class="summary">May vary depending on the part of the SUT</li><li class="summary">May include both UI and API tests to check test results consistency</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Test automation framework must:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">be easy to use</li><li class="summary">be well documented</li><li class="summary">be maintainable</li><li class="summary">support a consistent approach to automating tests</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">An easy to use and maintainable TAF qualities:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Good reporting and logging facilities: reports and logs should be full 
+                    and usable by any member of the team(devs, testers, managers)</li><li class="summary">Easy troubleshooting: SUT, TAS or environment bugs recognition</li><li class="summary">Test environment control for test consistency</li><li class="summary">Detailed documentation</li><li class="summary">Good test cases tracing</li><li class="summary">Changes in the SUT require minimum changes in the TAF</li><li class="summary">High automated testware reuse</li><li class="summary">Tests are up-to-date and retired as needed</li><li class="summary">Deployment is well planned</li><li class="summary">Can recover if SUT encounters a fatal error</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Things to avoid to succeed:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Code sensitive to interface changes</li><li class="summary">Automation sensitive to data changes</li><li class="summary">Environment sensitive to context</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Advice:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Not all success factors can be met early on</li><li class="summary">Once the TAA is in place, continuos improvement is needed to meet
+                    as many factors as possible</li>
         </div>
         <ol>
         </details></li>
@@ -158,6 +207,89 @@ li.summary{
         <li id="preparation" class="section">
             <details>
                 <summary class="sectionsummary">Preparing for Test Automation</summary>
+                
+<ul>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">SUT Factors Influencing Test Automation</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary class="keypointsummary">SUT interfaces</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Control interfaces</li><li class="summary">Monitor interfaces</li><li class="summary">High or low level</li><li class="summary">A particular level automation should only be carried out
+                    when this level interfaces are proved to be workng correctly</li><li class="summary">When an interface is not ready, it can be mocked or stubbed</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Third party software</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Sometimes third party software used by SUT may require testing</li><li class="summary">May require different test approach than the SUT itself</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Levels of intrusion</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">The greater the number of changes that are required to be made to the SUT 
+                specifically for automated testing, the higher the level of intrusion.</li><li class="summary">The lower the intrusion level the better</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Different SUT architectures</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Different SUT architectures may require different test approaches (C++ vs Python)</li><li class="summary">The differences may be evened out with hibrid strategy</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Size and complexity of the SUT</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">The larger the SUT the more comprehensive TAS is needed</li><li class="summary">No need of a large TAS for a small SUT</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">When the SUT does not yet exist test automation planning can start</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Select automation candidates based on the requirements</li><li class="summary">Think of a strategy and approach based on the candidates</li><li class="summary">Propose test interfaces to be added to the SUT</li>
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">Tool Evaluation and Selection</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<li>
+    <details class="subsection">
+        <summary class="subsectionsummary">Design for Testability and Automation.</summary>
+        <ul>
+        <li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        
+        </div>
+        <ol>
+        </details></li>
+        </ul>
+    </details></li>
+<ul>
+
             </details>
         </li>
         <li id="gtaa" class="section">

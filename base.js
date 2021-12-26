@@ -1,4 +1,5 @@
 const objectivesSubsections = require('./sections/objectives/main').subsections;
+const preparationSubsections = require('./sections/preparation/main').subsections;
 function loadStyles(){
     const fs = require('fs');
     return fs.readFileSync('style.css', {encoding:"utf-8"});
@@ -27,6 +28,7 @@ const body = `
         <li id="preparation" class="section">
             <details>
                 <summary class="sectionsummary">Preparing for Test Automation</summary>
+                ${preparationSubsections}
             </details>
         </li>
         <li id="gtaa" class="section">

@@ -30,14 +30,16 @@ details > .sectionsummary{
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
-    background-color: rgb(243, 248, 176);
+    /* background-color: rgb(243, 248, 176); */
+    color: rgb(86, 86, 247);
     list-style-type: '-';
 }
 details > .subsectionsummary{
     list-style-type: '➡️';
 }
 details[open] > .subsectionsummary{
-    background-color:rgb(179, 238, 238);
+    /* background-color:rgb(179, 238, 238); */
+    color: rgb(86, 86, 247);
     list-style-type: '⬇️';
 }
 
@@ -48,6 +50,9 @@ details[open] > .subsectionsummary{
 
 .pointslist {
     font-weight: bold;
+}
+details[open] > .keypointsummary{
+    color: rgb(247, 184, 49);
 }
 .keypoint{
     font-size: 2.25vh;

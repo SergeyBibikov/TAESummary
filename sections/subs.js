@@ -36,7 +36,7 @@ function genKeyPointHtml(keyPoint) {
         listHtml+=`<li class="summary">${ps}</li>`
     }
     return `<details class="keypoint">
-        <summary>${keyPoint.name}</summary>
+        <summary class="keypointsummary">${keyPoint.name}</summary>
         <ol>
         <div class="pointslist">
         ${listHtml}

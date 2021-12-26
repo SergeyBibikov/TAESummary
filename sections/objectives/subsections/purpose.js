@@ -69,8 +69,13 @@ module.exports = {
             ],
         },
         {
-            name:"",
-            pointSummary: []
-        },
+            name:"Limitations of test automation:",
+            pointSummary: [
+                "Not all manual tests can be automated",
+                "The automation can only check machine-interpretable results",
+                "The automation can only check actual results that can be verified by an automated test oracle",
+                "Not a replacement for exploratory testing"
+            ]
+        }
     ],
 }
