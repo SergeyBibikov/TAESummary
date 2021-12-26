@@ -1,5 +1,5 @@
 html {
-    font-family:'Courier New', Courier, monospace;
+    font-family: sans-serif;
     font-size: 3vh;
     display: flex;
     flex-direction: column;
@@ -30,17 +30,15 @@ details > .sectionsummary{
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
-    /* background-color: rgb(243, 248, 176); */
     color: rgb(86, 86, 247);
     list-style-type: '-';
 }
 details > .subsectionsummary{
-    list-style-type: '➡️';
+    list-style-type: '+';
 }
 details[open] > .subsectionsummary{
-    /* background-color:rgb(179, 238, 238); */
     color: rgb(86, 86, 247);
-    list-style-type: '⬇️';
+    list-style-type: '-';
 }
 
 .subsectionsummary{
@@ -50,9 +48,10 @@ details[open] > .subsectionsummary{
 
 .pointslist {
     font-weight: bold;
+    color: black;
 }
 details[open] > .keypointsummary{
-    color: rgb(247, 184, 49);
+    color: rgb(86, 86, 247);
 }
 .keypoint{
     font-size: 2.25vh;
