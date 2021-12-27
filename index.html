@@ -395,7 +395,12 @@ li.summary{
                 * document the test design <br></li><li class="summary">Capabilities for automated test generation include:<br>
                 * ability to model the SUT, its environment, and/or the test system<br>
                 * ability to define test directives and to configure/parameterize test generation algorithms<br>
-                * ability to trace the generated tests back to the model (elements)</li>
+                * ability to trace the generated tests back to the model (elements)</li><li class="summary">Condsiderations for implementation:<br>
+                * selection of manual or automated test generation<br>
+                * selection of ,for example, requirements-based, data-based, scenario-based or behavior-based test generation<br>
+                * selection of test generation strategies <br>
+                * choice of the test selection strategy (practical coverage criteria, weights, risk assessments, etc)<br>
+                </li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
@@ -412,28 +417,83 @@ li.summary{
                 * specify test sequences or fully-fledged test behaviors (including control statements and
                 expressions), to parameterize and/or to group them<br>
                 * document the test data, test cases and/or test procedures
+                </li><li class="summary">Condsiderations for implementation:<br>
+                * selection of data-driven, keyword-driven, pattern-based or model-driven test definition<br>
+                * selection of notation for test definition <br>
+                * selection of style guides and guidelines for the definition of high quality tests<br>
+                * selection of test case repositories (spreadsheets, databases, files, etc.)<br>
+                </li><li class="summary">Examples of notation for test definition:<br>
+                * tables, state-based notation, stochastic notation,<br>
+                * dataflow notation, business process notation, scenario-based notation<br>
+                * spreadsheets, domain-specific test languages<br>
+                * the Testing and Test Control Notation<br>
+                * the UML Testing Profile (UTP)<br></li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Test Execution Layer</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Supports tools for:<br>
+                 * executing test cases automatically<br>
+                 * logging the test case executions<br>
+                 * reporting the test results<br></li><li class="summary">Components in this layer provide the following capabilities:<br>
+                * set up and tear down the SUT for test execution<br>
+                * set up and tear down test suites (i.e., set of test cases including test data)<br>
+                * configure and parameterize the test setup<br>
+                * interpret both test data and test cases and transform them into executable scripts<br>
+                * instrument the test system and/or the SUT for (filtered) logging of test execution and/or for fault
+                injection<br>
+                * analyze the SUT responses during test execution to steer subsequent test runs<br>
+                * validate the SUT responses (comparison of expected and actual results) for automated test case
+                execution results<br>
+                * control the automated test execution in time<br></li><li class="summary">Condsiderations for implementation:<br>
+                * selection of the test execution tool<br>
+                * selection of interpretation or compilation approach (depends on the tool)<br>
+                * selection of the implementation paradigm (imperative, functional, object-oriented, scripting or a tool-specific technology)<br>
+                * selection of helper libraries to ease test execution<br>
                 </li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">Test Adaptation Layer</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li>
+        <li class="summary">Supports tools for:<br>
+                * controlling the test harness<br>
+                * interacting with the SUT<br>
+                * monitoring the SUT<br>
+                * simulating or emulating the SUT environment<br></li><li class="summary">Provides the following functionality:<br>
+                * mediating between the technology-neutral test definitions and the specific technology requirements
+                    of the SUT and the test devices<br>
+                * applying different technology-specific adaptors to interact with the SUT<br>
+                * distributing the test execution across multiple test devices/test interfaces or executing tests locally<br></li><li class="summary">Condsiderations for implementation:<br>
+                * selection of test interfaces to the SUT
+                * selection of tools to stimulate and observe the test interfaces
+                * selection of tools to monitor the SUT during test execution
+                * selection of tools to trace test execution (e.g., including the timing of the test execution)
+                </li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">Configuration management of a TAS</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li>
+        <li class="summary">May include:<br>
+                    * test models<br>
+                    * test definitions/specifications including test data, test cases and libraries<br>
+                    * test scripts<br>
+                    * test execution engines and supplementary tools and components<br>
+                    * test adaptors for the SUT<br>
+                    * simulators and emulators for the SUT environment<br>
+                    * test results and test reports<br></li><li class="summary">Should allow easy switching between versions</li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">Project management of a TAS and test management</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li>
+        <li class="summary">TAS should provide easy access to the metrics and other reports to show to the managers</li><li class="summary">TAS should accept the SDLC of the SUT</li>
         </div>
         <ol>
         </details></li>
@@ -444,6 +504,27 @@ li.summary{
         <summary class="subsectionsummary">TAA Design</summary>
         <ul>
         <li><details class="keypoint">
+        <summary class="keypointsummary">TA approach considerations</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Which activity or phase of the test process should be automated (test generation stage is unique to TA)</li><li class="summary">Which test level should be supported</li><li class="summary">Which type of test should be supported</li><li class="summary">Which test role should be supported</li><li class="summary">Which software product(p.line, p.family) should be supported</li><li class="summary">Which SUT technologies should be supported</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary"></summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
         <summary class="keypointsummary"></summary>
         <ol>
         <div class="pointslist">
