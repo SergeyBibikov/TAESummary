@@ -11,33 +11,47 @@
     src: url('Poppins-Regular.ttf');
   }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     height: 100vh;
     font-family: poppins;
     font-size: 3vh;
     color: rgb(87, 86, 86);
     background-color: whitesmoke;
-}
 
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    background: #605B56;
+}
+header > div{
+    margin: auto;
+}
 body{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: auto;
-    margin-top: 5vh;
+
 }
 .title{
-    width: 60vw;
-    margin-left: 8vh;
+    color: white;
 }
 main {
     display: flex;
-    width: 80vw;
+    height: 90%;
+    margin: 1vh;
 }
 ul {
     list-style: none;
 }
+
 details {
     margin: 2px;
 }
@@ -51,15 +65,23 @@ details > .sectionsummary{
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
-    color: rgb(86, 86, 247);
+    /* color: rgb(86, 86, 247); */
+    color: #4BB3FD;
     list-style-type: '-';
 }
 details > .subsectionsummary{
     list-style-type: '+';
 }
 details[open] > .subsectionsummary{
-    color: rgb(86, 86, 247);
+    /* color: rgb(86, 86, 247); */
+    /* color: #FF7F51; */
+    color: #F38D68;
     list-style-type: '-';
+}
+
+details[open] > .keypointsummary{
+    /* color: rgb(86, 86, 247); */
+    color: #00A676;
 }
 
 .subsectionsummary{
@@ -69,17 +91,18 @@ details[open] > .subsectionsummary{
 
 .pointslist {
     font-weight: bold;
-    color: rgb(26, 26, 26);
+    color: rgba(26, 26, 26, 0.631);
 }
-details[open] > .keypointsummary{
-    color: rgb(86, 86, 247);
-}
+
 .keypoint{
     font-size: 2.25vh;
 }
 
+li{
+    margin-left: 1vh;
+}
 li.summary{
-    margin: 2px;
+    margin-left: 2vh;
     font-style: italic;
 }
 
@@ -87,7 +110,9 @@ li.summary{
 <title>ISTQB TAE Summary</title>
 </head>
 <body>
-<div class="title">ISTQB Test Automation Engineer Syllabus sections and their key points</div>
+<header>
+    <div class="title">ISTQB Test Automation Engineer Syllabus sections and their key points</div>
+</header>
 <main>
     <ul id="main-list" class="main-list">
         <li id="objectives" class="section">
