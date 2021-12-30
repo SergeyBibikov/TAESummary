@@ -1,7 +1,11 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('Poppins-Regular.ttf');
+  }
 
 html {
     height: 100vh;
-    font-family: sans-serif;
+    font-family: poppins;
     font-size: 3vh;
     color: rgb(87, 86, 86);
     background-color: whitesmoke;
