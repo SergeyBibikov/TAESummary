@@ -65,7 +65,6 @@ details > .sectionsummary{
     list-style-type: '+';
 }
 details[open] > .sectionsummary{
-    /* color: rgb(86, 86, 247); */
     color: #4BB3FD;
     list-style-type: '-';
 }
@@ -73,14 +72,11 @@ details > .subsectionsummary{
     list-style-type: '+';
 }
 details[open] > .subsectionsummary{
-    /* color: rgb(86, 86, 247); */
-    /* color: #FF7F51; */
     color: #F38D68;
     list-style-type: '-';
 }
 
 details[open] > .keypointsummary{
-    /* color: rgb(86, 86, 247); */
     color: #00A676;
 }
 
@@ -647,10 +643,71 @@ li.summary{
         <summary class="subsectionsummary">TAS Development</summary>
         <ul>
         <li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">Basic SDLC stages for a TAS</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        <li class="summary">Analyze</li><li class="summary">Design</li><li class="summary">Develop</li><li class="summary">Test</li><li class="summary">Deploy</li><li class="summary">Evolve</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">TAS development specific traits</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Compatibility with the SUT</li><li class="summary">Syncronization with the SUT</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Compatibility between the TAS and the SUT</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Process compatibility</li><li class="summary">Team compatibility(mindset, reviews, communication)</li><li class="summary">Technology compatibility(seamless interplay)</li><li class="summary">Tool compatibility</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Synchronization between TAS and SUT</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Synchronization of requirements:<br>
+                * TAS has two types of the requirements:<br>
+                  a) to it as a software<br>
+                  b) to it as a testing tool of the SUT<br>
+                * The second type of reqs need to be in sync
+                  with the verion of the SUT<br>
+                </li><li class="summary">Synchronization of development phases</li><li class="summary">Synchronization of defect tracking and confirmation testing</li><li class="summary">Synchronization of SUT and TAS evolution</li><li class="summary">Stages to sync:<br>
+               * SUT design triggers TAS analysis<br>
+               * if there is manual testing, its test deploy stage
+                also support TAS analysis<br>
+               * SUT test requires TAS deployment<br></li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Building Reuse into the TAS</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Reusable TAS artifacts can nclude:<br>
+               * (parts of) test models of test goals, test scenarios, test components<br>
+               * (parts of) test cases, test data, test procedures or test libraries themselves<br>
+               * the test engine and/or test report framework<br>
+               * the adaptors to the SUT components and/or interfaces<br></li><li class="summary">Factors that my increase the ability for reuse:<br>
+               * following TAA and updating it as needed<br>
+               * good TAS documentation <br> 
+               * high quality of the TAS artifacts<br></li><li class="summary">Requires effort to measure, demonstrate benefits and evangelize</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Support for a Variety of Target Systems</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Variery of target systems = test different configurations</li><li class="summary">Different configurations may refer to:<br>
+               * number and interconnection of SUT components<br>
+               * SUT environments(software and hardware)<br>
+               * technologies, prog. langs, OSes used to implement SUT<br>
+               * libs and packages<br>
+               * tools used to implement SUT<br>
+               </li><li class="summary">The ability of a TAS to test different software product configurations is determined when the TAA is defined</li><li class="summary">Ways to handle the TAS variety and SUT variety:<br>
+               * version/configuration control of both the TAS and SUT<br> 
+               * TAS parametrization<br>
+               </li>
         </div>
         <ol>
         </details></li>
