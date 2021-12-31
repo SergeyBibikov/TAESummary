@@ -63,7 +63,9 @@ module.exports = {
                 `Monitoring TAS use, benefits and costs`,
                 `Providing support for the test and development teams`,
                 `Gathering lessons learned from all teams`,
-                `Identifying and implementing steps for improvement`
+                `Identifying and implementing steps for improvement`,
+                `The deployment procedure must be well documented
+                and version controlled`
             ]
         },
         {

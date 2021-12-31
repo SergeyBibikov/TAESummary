@@ -771,7 +771,8 @@ li.summary{
         <summary class="keypointsummary">Success factors for deployment</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary">An incremental rollout</li><li class="summary">Adapting and improving processes to fit with the use of the TAS</li><li class="summary">Providing training and coaching/mentoring for new users</li><li class="summary">Defining usage guidelines</li><li class="summary">Implementing a way to gather information about the actual use</li><li class="summary">Monitoring TAS use, benefits and costs</li><li class="summary">Providing support for the test and development teams</li><li class="summary">Gathering lessons learned from all teams</li><li class="summary">Identifying and implementing steps for improvement</li>
+        <li class="summary">An incremental rollout</li><li class="summary">Adapting and improving processes to fit with the use of the TAS</li><li class="summary">Providing training and coaching/mentoring for new users</li><li class="summary">Defining usage guidelines</li><li class="summary">Implementing a way to gather information about the actual use</li><li class="summary">Monitoring TAS use, benefits and costs</li><li class="summary">Providing support for the test and development teams</li><li class="summary">Gathering lessons learned from all teams</li><li class="summary">Identifying and implementing steps for improvement</li><li class="summary">The deployment procedure must be well documented
+                and version controlled</li>
         </div>
         <ol>
         </details></li><li><details class="keypoint">
@@ -786,13 +787,76 @@ li.summary{
     </details></li>
 <li>
     <details class="subsection">
-        <summary class="subsectionsummary"></summary>
+        <summary class="subsectionsummary">Risk Assessment and Mitigation Strategies (deploymentwise)</summary>
         <ul>
         <li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">Typical technical issues include:</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li>
+        <li class="summary">Too much abstraction</li><li class="summary">Data tables can become too large/complex/cumbersome</li><li class="summary">TAS dependencies on external components(e.g, libs)</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Typical deployment project risks include:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Staffing issues</li><li class="summary">New SUT deliverables may cause the TAS to operate incorrectly</li><li class="summary">Delays in introducing automation</li><li class="summary">Delays in updating TAS based on the changes done to the SUT</li><li class="summary">The TAS cannot capture the (non-standard) objects it is intended to track</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Potential failure points of the TAS project include:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Migration to a different environment</li><li class="summary">Deployment to the target environment</li><li class="summary">New delivery from development</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Two cases of deploying a TAS</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Initial deployment</li><li class="summary">Maintenance deployment</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">First time deployment basic steps:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Define the infrastructure in which the TAS will run</li><li class="summary">Create the infrastructure for the TAS</li><li class="summary">Create a procedure for maintaining the TAS and its infrastructure</li><li class="summary">Create a procedure for maintaining the test suite that the TAS will execute</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">First time deployment risks include:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Total execution time of the test suite exceeds the expected time.
+                <br>To mitigate:
+                make sure that the test suite gets enough time to be executed</li><li class="summary">Installation and configuration issues with test environment. 
+                <br>To mitigate:
+                come up with an effective way to setup needed preconditions </li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Maintenance deployment steps:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Make an assessment of the changes in the new version of the TAS compared to the old one</li><li class="summary">Test the TAS for both new functionality and regressions</li><li class="summary">Check if the test suite needs to be adapted to the new version of the TAS</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Maintenance deployment risks include:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">The test suite needs to change to run on the updated TAS.
+                <br>To mitigate:
+                make the necessary changes to the test suite</li><li class="summary">Stubs, drivers and interfaces used in testing 
+                need to change to fit with the updated TAS.
+                <br>To mitigate:
+                make the necessary changes to the test harness</li><li class="summary">The infrastructure needs to change to accommodate the updated TAS.
+                <br>To mitigate:
+                perform the necessary changes and test them with the updated TAS</li><li class="summary">The updated TAS has additional defects or performance issues.
+                <br>To mitigate:
+                perform an analysis of risks vs benefits. If the benefits outweight,
+                deploy anyway with prper release notes</li>
         </div>
         <ol>
         </details></li>
@@ -800,7 +864,7 @@ li.summary{
     </details></li>
 <li>
     <details class="subsection">
-        <summary class="subsectionsummary"></summary>
+        <summary class="subsectionsummary">Test Automation Maintenance</summary>
         <ul>
         <li><details class="keypoint">
         <summary class="keypointsummary"></summary>
