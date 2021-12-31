@@ -1,6 +1,7 @@
 const objectivesSubsections = require('./sections/objectives/main').subsections;
 const preparationSubsections = require('./sections/preparation/main').subsections;
 const gtaaSubsections = require('./sections/gtaa/main').subsections;
+const deploymentSubsections = require('./sections/deployment/main').subsections;
 function loadStyles(){
     const fs = require('fs');
     return fs.readFileSync('style.css', {encoding:"utf-8"});
@@ -43,6 +44,7 @@ const body = `
         <li id="demployment" class="section">
             <details>
                 <summary class="sectionsummary">Deployment Risks and Contingencies</summary>
+                ${deploymentSubsections}
             </details>
         </li>
         <li id="reporting" class="section">
