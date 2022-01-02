@@ -2,6 +2,7 @@ const objectivesSubsections = require('./sections/objectives/main').subsections;
 const preparationSubsections = require('./sections/preparation/main').subsections;
 const gtaaSubsections = require('./sections/gtaa/main').subsections;
 const deploymentSubsections = require('./sections/deployment/main').subsections;
+const reportingSubsections = require('./sections/reporting/main').subsections;
 function loadStyles(){
     const fs = require('fs');
     return fs.readFileSync('style.css', {encoding:"utf-8"});
@@ -50,6 +51,7 @@ const body = `
         <li id="reporting" class="section">
             <details>
                 <summary class="sectionsummary">Test Automation Reporting and Metrics</summary>
+                ${reportingSubsections}
             </details>
         </li>
         <li id="mantoauto" class="section">
