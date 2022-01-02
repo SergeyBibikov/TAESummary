@@ -867,10 +867,85 @@ li.summary{
         <summary class="subsectionsummary">Test Automation Maintenance</summary>
         <ul>
         <li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">Maintenance triggers</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li>
+        <li class="summary">Modifications</li><li class="summary">Migration</li><li class="summary">Retirement of the system</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Types of maintenance</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Preventive(making TAS futureproof)</li><li class="summary">Corrective(TAS failures fix)</li><li class="summary">Perfective(optimizations)</li><li class="summary">Adaptive(making TAS work with new techs and tools)</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Maintenance scope depends on:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">The size and complexity of the TAS</li><li class="summary">The size of the change</li><li class="summary">The risk of the change</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Good practices for maintaining the TAS:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">The deployment procedures and usage of the TAS must be clear and documented</li><li class="summary">The third party dependencies must be documented, together with drawbacks and known issues</li><li class="summary">The TAS must be modular, so parts of it can be easily replaced</li><li class="summary">The TAS must run in an environment that is replaceable or with replaceable components</li><li class="summary">The TAS must separate test scripts from the TAF itself</li><li class="summary">The TAS must run isolated from the development environment</li><li class="summary">The TAS together with the environment, test suite and testware artifacts must be under
+                configuration management</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Third party components considerations:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">They need to be documented and their config. must be managed</li><li class="summary">A plan is needed in case changes to these components are required</li><li class="summary">Their licenses must be taken into account</li><li class="summary">Keep them up to date</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Benefits of naming standards and other conventions</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">TAS becomes easy to read, understand, change and maintain</li><li class="summary">Easier to introduce new people to the project</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Naming standards can refer to:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">variables</li><li class="summary">files</li><li class="summary">test scenarios</li><li class="summary">keywords</li><li class="summary">keyword parameters</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Other conventions can refer to:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">pre-requisites and post-actions for test execution</li><li class="summary">the content of the test data</li><li class="summary">the test environment</li><li class="summary">status of test execution</li><li class="summary">execution logs and reports</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Documentation considerations include:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Someone has to write it</li><li class="summary">Someone has to maintain it</li><li class="summary">What needs to be documented: the design, components, 
+                integrations with third parties, dependencies and deployment
+                procedures</li><li class="summary">writing of documentation should be a part of the development process</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Training material considerations include:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Well-written docs may be a basis to training materials</li><li class="summary">The maintenance of the training material consists of initially
+                writing it and then reviewing it
+                periodically</li><li class="summary">Training most likely happens towards the end of a lifecycle iteration of the SUT</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Training material is a combination of</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">functional specifications of the TAS</li><li class="summary">design and architecture of the TAS</li><li class="summary">deployment and maintenance of the TAS</li><li class="summary">usage of the TAS (user manual)</li><li class="summary">practical examples and exercises</li><li class="summary">tips and tricks</li>
         </div>
         <ol>
         </details></li>

@@ -29,7 +29,7 @@ module.exports = {
         {
             name:"Good practices for maintaining the TAS:",
             pointSummary:[
-                `The deployment procedures and usage of the TAS must be clear and documented`
+                `The deployment procedures and usage of the TAS must be clear and documented`,
                 `The third party dependencies must be documented, together with drawbacks and known issues`,
                 `The TAS must be modular, so parts of it can be easily replaced`,
                 `The TAS must run in an environment that is replaceable or with replaceable components`,
