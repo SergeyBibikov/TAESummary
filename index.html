@@ -1217,13 +1217,27 @@ li.summary{
 <ul>
 <li>
     <details class="subsection">
-        <summary class="subsectionsummary"></summary>
+        <summary class="subsectionsummary">Options for Improving Test Automation</summary>
         <ul>
         <li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">TAS improvement benefits include:</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        <li class="summary">greater efficiency (further reducing manual intervention)</li><li class="summary">better ease of use</li><li class="summary">additional capabilities</li><li class="summary">improved support for testing activities</li>
+        </div>
+        <ol>
+        </details></li><li><details class="keypoint">
+        <summary class="keypointsummary">Areas of a TAS that may be considered for improvement:</summary>
+        <ol>
+        <div class="pointslist">
+        <li class="summary">Scripting: <br>
+                * decrease code duplicaition<br>
+                * enrich libs in use<br>
+                * parametrize tests where needed<br>
+                * establish an error recovery process<br>
+                * use dynamic waits or events<br>
+                * treat the testware as software<br>
+                * revise existing scripts and remove outdated ones<br></li><li class="summary">Test execution(parallel and high-priority tests first)</li><li class="summary">Verification (standard verification methods)</li><li class="summary">Architecture (some SUT changes may trigger the TAA changes)</li><li class="summary">Pre- and post-processing</li><li class="summary">Documentation</li><li class="summary">TAS features(new features - only when needed)</li><li class="summary">TAS updates and upgrades(applied incrementally and tested thoroughly)</li>
         </div>
         <ol>
         </details></li>
@@ -1231,13 +1245,19 @@ li.summary{
     </details></li>
 <li>
     <details class="subsection">
-        <summary class="subsectionsummary"></summary>
+        <summary class="subsectionsummary">Planning the Implementation of Test Automation Improvement</summary>
         <ul>
         <li><details class="keypoint">
-        <summary class="keypointsummary"></summary>
+        <summary class="keypointsummary">What to bear in mind:</summary>
         <ol>
         <div class="pointslist">
-        <li class="summary"></li><li class="summary"></li><li class="summary"></li>
+        <li class="summary">Identify changes in the test environment components:<br>
+                * changes should be made incrementally in small chunks
+                and tested<br>
+                * full regression suite should be launched only after 
+                all the changes are applied<br></li><li class="summary">Increase efficiency and effectiveness of core TAS function libraries</li><li class="summary">Target multiple functions that act on the same control type for consolidation</li><li class="summary">Refactor the TAA to accommodate changes in the SUT</li><li class="summary">Naming conventions and standardization should be followed 
+                by new libraries</li><li class="summary">Evaluation of existing scripts for SUT revision/elimination
+                (big scripts decomposition, rarely run scripts elimination)</li>
         </div>
         <ol>
         </details></li>
