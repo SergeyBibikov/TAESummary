@@ -5,7 +5,7 @@ module.exports = {
             name: "Steps to verify the automated test suite:",
             pointSummary:[
                 `Executing test scripts with known passes and failures`,
-                `Checking the test suite`,
+                `Checking the test suite (completeness and version)`,
                 `Verifying new tests that focus on new features of the framework`,
                 `Considering the repeatability of tests`,
                 `Checking that there are enough verification points in the automated test suite.`
