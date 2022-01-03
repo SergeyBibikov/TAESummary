@@ -4,6 +4,7 @@ const gtaaSubsections = require('./sections/gtaa/main').subsections;
 const deploymentSubsections = require('./sections/deployment/main').subsections;
 const reportingSubsections = require('./sections/reporting/main').subsections;
 const mantoautoSubsections = require('./sections/mantoauto/main').subsections;
+const verificationSubsections = require('./sections/verification/main').subsections;
 
 function loadStyles(){
     const fs = require('fs');
@@ -65,6 +66,7 @@ const body = `
         <li id="verification" class="section">
             <details>
                 <summary class="sectionsummary">Verifying the TAS</summary>
+                ${verificationSubsections}
             </details>
         </li>
         <li id="improvement" class="section">
