@@ -5,6 +5,7 @@ const deploymentSubsections = require('./sections/deployment/main').subsections;
 const reportingSubsections = require('./sections/reporting/main').subsections;
 const mantoautoSubsections = require('./sections/mantoauto/main').subsections;
 const verificationSubsections = require('./sections/verification/main').subsections;
+const improvementSubsections = require('./sections/improvement/main').subsections;
 
 function loadStyles(){
     const fs = require('fs');
@@ -72,6 +73,7 @@ const body = `
         <li id="improvement" class="section">
             <details>
                 <summary class="sectionsummary">Continuous Improvement</summary>
+                ${improvementSubsections}
             </details>
         </li>
     </ul>
