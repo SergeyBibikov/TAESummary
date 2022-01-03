@@ -3,6 +3,8 @@ const preparationSubsections = require('./sections/preparation/main').subsection
 const gtaaSubsections = require('./sections/gtaa/main').subsections;
 const deploymentSubsections = require('./sections/deployment/main').subsections;
 const reportingSubsections = require('./sections/reporting/main').subsections;
+const mantoautoSubsections = require('./sections/mantoauto/main').subsections;
+
 function loadStyles(){
     const fs = require('fs');
     return fs.readFileSync('style.css', {encoding:"utf-8"});
@@ -57,6 +59,7 @@ const body = `
         <li id="mantoauto" class="section">
             <details>
                 <summary class="sectionsummary">Transitioning Manual Testing to an Automated Environment</summary>
+                ${mantoautoSubsections}
             </details>
         </li>
         <li id="verification" class="section">

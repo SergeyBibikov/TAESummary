@@ -12,7 +12,8 @@ module.exports = {
         {
             name: "Publishing the reports",
             pointSummary: [
-                `The report should be published for everyone interested in the execution results`,
+                `The report should be published for everyone 
+                    interested in the execution results`,
                 `Reports can be:<br>
                 * uploaded on a website<br>
                 * sent to a mailing list<br>
